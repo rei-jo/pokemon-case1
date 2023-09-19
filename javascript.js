@@ -43,3 +43,5 @@ menu.css("display", "block");
     })
  })
     
+
+//  TODO: fetch data from pokemon API
