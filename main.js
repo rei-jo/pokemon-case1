@@ -3,7 +3,7 @@ async function fetchData() {
     method: "GET"
   });
   const data = await res.json();
-
+  
   return data.results;
 }
 
