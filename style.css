@@ -1,0 +1,256 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+.layar-penuh{
+    width: 100%;
+}
+nav{
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height :60px;
+    width :100px;
+    transition: background-color 0.5s ease;
+}
+nav.putih {
+    background-color: #fff;
+}
+nav .logo {
+ float: left;
+ position: relative;
+ line-height: 55px;
+}
+nav .logo img{
+    vertical-align: middle;
+    width: 120px;
+}
+nav .menu{
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+nav .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+nav ul li a {
+    color: #fff;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index:  2;
+}
+header img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+header .intro h3{
+    font-size: 50px;
+    margin: o;
+    padding: 0;
+}
+.tombol {
+    background-color: #e2e612;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1;
+}
+.tombol-menu{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis{
+    height: 3px;
+    background-color: #fff;
+}
+section{
+    padding: 50px 0px 50px 0px;
+}
+section h3{
+    font-size: 30px;
+}
+section h3::after{
+    content: "";
+    border-bottom: 5px solid #e2e612;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+#aboutmon {
+    text-align: center;
+}
+section p.ringkasan{
+    font-style: italic;
+    font-size: 18px;
+    color: #ababab;
+}
+section .konten-isi p {
+    font-style: normal;
+}
+nav.putih {
+    background-color: #fff;
+}
+nav.putih .tombol-menu .garis{
+    background-color: #333;
+    padding-right: 0%;
+}
+nav.putih ul li a {
+    color: #e2e612;
+}
+section.abuabu{
+background-color: #f5f6f6;
+}
+.types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.types h6{
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.types img{
+    width: 50px;
+}
+.types div{
+    text-align: center;
+    width: 30%;
+}
+section#gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+section#gallery div{
+    padding: 10px;
+}
+section#gallery div img{
+    height: 100px;
+    border-radius: 5px;
+}
+section#gallery div img:hover{
+     transition: all 0.2 ease-in-out;
+     transform: scale(1.1);
+}
+section.detail {
+    background: url(/foto/pkchu\ 34.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}
+footer {
+    padding: 50px 0px 50px 0px;
+    background-color: #343a40;
+    color: #fff;
+}
+footer .layar-dalam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .layar-dalam div {
+    width: 20%;
+}
+footer .layar-dalam h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+ @media screen and (max-width:991.98px){
+    .layar-dalam{
+        width: 90%;
+    }
+    nav .menu ul{
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        line-height: 4px;
+    }
+    nav .menu ul li a{
+        color: #333;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+ }
