@@ -184,10 +184,14 @@ background-color: #f5f6f6;
     text-align: center;
     width: 30%;
 }
+.types div img:hover {
+    transition : all 0.5 ease-in;
+    transform: scale (1.1);
+}
 section#gallery{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; 
     overflow: hidden;
     padding: 10px 0px 10px 0px;
 }
